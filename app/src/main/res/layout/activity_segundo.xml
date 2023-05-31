@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_span="3"
+    android:background="@drawable/fondogris_solo"
+    tools:context=".SegundoActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="130dp"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="17dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/q_blanca" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/op1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/ic_borde"
+        android:gravity="center"
+        android:text="CÓDIGO"
+        android:textColor="@color/colorQuantum"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="@font/roboto"
+        android:text="Versión 2.0"
+        android:textColor="@color/colorQuantum"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/QTM2"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/colorQuantum"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/noOlvidar"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="invisible">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/codigo1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/codigo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/codigo2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/idEquipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/descEquip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/caso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/ic_borde4"
+        android:fontFamily="@font/roboto"
+        android:onClick="vigentes"
+        android:text="Vigentes"
+        android:visibility="visible"
+        app:cornerRadius="30dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/ic_borde7"
+        android:fontFamily="@font/roboto"
+        android:onClick="cerradas"
+        android:text="Cerradas"
+        android:textColor="#D4145A"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/textView19"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto"
+        android:onClick="Limpiar"
+        android:text="Limpiar"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/recuperacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <HorizontalScrollView
+        android:id="@+id/fechas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+
+                                android:text="F. Solicitada: "
+                                android:textColor="@color/colorQuantum"
+                                android:textSize="9sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/fechaSolcitada"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="dd/mm/aaaa"
+                                android:inputType="date"
+                                android:textColor="#434141"
+                                android:textColorHint="#837E7E"
+                                android:textSize="10sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="3dp"
+                                android:onClick="abrirCalendario"
+                                app:srcCompat="@drawable/ic_baseline_calendar_month_24" />
+
+                            <EditText
+                                android:id="@+id/fechaSolcitada2"
+                                android:layout_width="72dp"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="dd/mm/aaaa"
+                                android:inputType="date"
+                                android:textColor="#434141"
+                                android:textColorHint="#837E7E"
+                                android:textSize="10sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="3dp"
+                                android:onClick="abrirCalendario4"
+                                app:srcCompat="@drawable/ic_baseline_calendar_month_24" />
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="F. Programada:"
+                                android:textColor="@color/colorQuantum"
+                                android:textSize="9sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <EditText
+                                android:id="@+id/fechaProgramada"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="dd/mm/aaaa"
+                                android:inputType="date"
+                                android:textColor="#434141"
+                                android:textColorHint="#837E7E"
+                                android:textSize="10sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="3dp"
+                                android:onClick="abrirCalendario2"
+                                app:srcCompat="@drawable/ic_baseline_calendar_month_24" />
+
+                            <EditText
+                                android:id="@+id/fechaProgramada2"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="dd/mm/aaaa"
+                                android:inputType="date"
+                                android:textColor="#434141"
+                                android:textColorHint="#837E7E"
+                                android:textSize="10sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="3dp"
+                                android:onClick="abrirCalendario3"
+                                app:srcCompat="@drawable/ic_baseline_calendar_month_24" />
+
+                        </TableRow>
+
+
+                    </TableLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/Asignado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fechas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textColor="#454242"
+        android:textColorHint="#918A8A"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="179dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/Asignado"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/ic_borde"
+        android:gravity="center"
+        android:text="ASIGNADO"
+        android:textColor="@color/colorQuantum"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/op3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/ic_borde"
+        android:gravity="center"
+        android:text="CÓDIGO"
+        android:textColor="@color/colorQuantum"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/op2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/ic_borde"
+        android:gravity="center"
+        android:text="CÓDIGO"
+        android:textColor="@color/colorQuantum"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/op3"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/textView13"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:textColor="#454242"
+        android:textSize="10sp"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/scmantenimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarThumbVertical="@drawable/linea"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerId2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="#454242"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tm"
+        android:layout_width="179dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/scmantenimiento"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toStartOf="@+id/textView18"
+        android:background="@drawable/ic_borde"
+        android:fontFamily="@font/roboto"
+        android:gravity="center|start"
+        android:text="  TIPO DE MANTENIMIENTO"
+        android:textColor="@color/colorQuantum"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/op2"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/textView18"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:textColor="#454242"
+        android:textSize="10sp" />
+
+    <ScrollView
+        android:id="@+id/scFase"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tm"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarThumbVertical="@drawable/linea"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerId1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/p2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="#454242"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/scFase"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/textView20"
+        android:background="@drawable/ic_borde"
+        android:fontFamily="@font/roboto"
+        android:gravity="center|start"
+        android:text="  FASE"
+        android:textColor="@color/colorQuantum"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/op1"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/textView20"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:textColor="#454242"
+        android:textSize="10sp" />
+
+    <ScrollView
+        android:id="@+id/scTipoOrden"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarThumbVertical="@drawable/linea"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerId4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:visibility="visible">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/p1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="#676262"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/scTipoOrden"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toStartOf="@+id/textView14"
+        android:background="@drawable/ic_borde"
+        android:elevation="2dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center|start"
+        android:text="  TIPO DE ORDEN"
+        android:textColor="@color/colorQuantum"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

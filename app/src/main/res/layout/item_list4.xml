@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/idDato"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:background="@drawable/custom_button2"
+        android:clickable="false"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        android:textStyle="normal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+
+</LinearLayout>

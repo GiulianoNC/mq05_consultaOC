@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondogris_solo"
+
+    tools:context=".TercerActivity">
+
+    <Button
+        android:id="@+id/finalizar"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/ic_borde4"
+        android:fontFamily="@font/roboto"
+        android:onClick="Salir"
+        android:text="Finalizar"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="130dp"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="17dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/q_blanca" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:fontFamily="@font/roboto"
+        android:text="Versión 2.0"
+        android:textColor="@color/colorQuantum"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/QTM3"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/colorQuantum"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-21dp"
+        android:layout_marginTop="-2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="13dp"
+        android:autoText="false"
+
+        android:background="@drawable/ic_baseline_keyboard_double_arrow_left_24"
+        android:onClick="Siguiente"
+        app:backgroundTint="#F1EEEE"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descripcion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/Numero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/Tipo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/QTM3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="32dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/ic_borde6"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="start"
+                        android:text="ORDEN"
+                        android:textColor="@color/colorQuantum"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_borde6"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="start"
+                        android:text="  DETALLE"
+                        android:textColor="@color/colorQuantum"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent" />
+
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/ic_borde6"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="start"
+                        android:text=" ESTADO"
+                        android:textColor="@color/colorQuantum"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler5"
+        android:layout_width="1dp"
+        android:layout_height="800dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="11dp"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:id="@+id/scInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/finalizar"
+        android:layout_below="@+id/scrollView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerId4"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="13dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:visibility="visible">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/pruebaCerradas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="400dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="#403C3C"
+                android:textSize="9sp"
+                android:textStyle="normal" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerId6"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="24dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

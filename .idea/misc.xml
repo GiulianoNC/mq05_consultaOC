@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable-v24/custom_button.xml" value="0.183" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable-v24/custom_button2.xml" value="0.2115" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable-v24/ic_borde.xml" value="0.2" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable-v24/linea.xml" value="0.132" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable-v24/splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable-v24/stylocuadrado.xml" value="0.33" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable/colorcombinado.xml" value="0.1" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable/colorcombinado2.xml" value="0.2115" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable/ic_baseline_keyboard_double_arrow_left_24.xml" value="0.2115" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable/ic_borde.xml" value="0.1" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable/ic_borde4.xml" value="0.2115" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable/ic_borde5.xml" value="0.2115" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable/ic_borde6.xml" value="0.2115" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable/ic_borde7.xml" value="0.2115" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1515" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/activity_configuracion.xml" value="0.22" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/activity_cuarto.xml" value="0.25" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/activity_inicio.xml" value="0.25" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/activity_login.xml" value="0.12894736842105264" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/activity_segundo.xml" value="0.25" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/activity_tercer.xml" value="0.25" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/item_list.xml" value="0.22" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/item_list2.xml" value="0.15" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/item_list3.xml" value="0.1" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/item_list4.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/item_list5.xml" value="0.12894736842105264" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/toolbar.xml" value="0.22" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/layout/toolbar2.xml" value="0.33" />
+        <entry key="..\:/Users/Quantum/StudioProjects/aprobacionesAPP/app/src/main/res/menu/main_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
